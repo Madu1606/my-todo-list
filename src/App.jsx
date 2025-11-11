@@ -1,5 +1,6 @@
 import React from "react";
-import ToDoList from "./ToDoList"; 
+import ToDoList from "./ToDoList";
+import Form from "./Form";
 
 const todoList1 = [
   { id: 1, task: "Buy groceries", isCompleted: false },
@@ -9,8 +10,10 @@ const todoList1 = [
 
 function App() {
   return (
-    <div className="App">
-      <ToDoList taskList={todoList1} /> {}
+    <div className="App" style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
+      <ToDoList taskList={todoList1} />
+      <hr />
+      <Form />
     </div>
   );
 }
